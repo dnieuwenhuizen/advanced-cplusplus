@@ -13,7 +13,7 @@ using namespace std;
 
 class MyException: public exception {
 public:
-	virtual const char* what() const throw() {
+	virtual const char* what() const throw() { // use throw() when your function does not throw anything
 		return "Something bad happened!";
 	}
 };

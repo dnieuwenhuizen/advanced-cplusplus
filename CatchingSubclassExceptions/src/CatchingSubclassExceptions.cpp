@@ -23,6 +23,10 @@ void goesWrong() {
 	}
 }
 
+// Always try to catch subclasses before parent classes. Bad_alloc is a subclass of exception (inherits from)
+// bad_alloc is a form of exception, but exception does not fit in bad_alloc. 
+// Exception has many subclasses which can be found on the exception std page when you google it. 
+
 int main() {
 
 	try {
